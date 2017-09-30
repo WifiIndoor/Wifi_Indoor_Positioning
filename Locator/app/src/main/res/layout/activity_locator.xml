@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_above="@+id/bottom_panel"
+        android:layout_below="@+id/custom_list3">
+        <TextView
+            android:id="@+id/print"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@id/bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="right">
+
+        <Button android:id="@+id/locator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="@string/locator_button_text"/>
+    </LinearLayout>
+
+</RelativeLayout>

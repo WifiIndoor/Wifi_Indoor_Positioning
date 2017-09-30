@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">室内定位</string>
+    <string name="data_text1">输入x:</string>
+    <string name="data_edittext1">请输入坐标x</string>
+    <string name="data_text2">输入y:</string>
+    <string name="data_edittext2">请输入坐标y</string>
+    <string name="data_text3">楼层:</string>
+    <string name="data_edittext3">请输入楼层</string>
+    <string name="data_button_text">采集数据</string>
+    <string name="main_text">欢迎，请选择需要的功能</string>
+    <string name="locator_button_text">获取位置</string>
+</resources>

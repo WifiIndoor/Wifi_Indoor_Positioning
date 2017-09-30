@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/custom_list1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tx"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="@string/data_text1"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/data_edittext1"
+            android:id="@+id/ex"
+            android:inputType="number"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/custom_list2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/custom_list1">
+        <TextView
+            android:id="@+id/ty"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="@string/data_text2"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/data_edittext2"
+            android:id="@+id/ey"
+            android:inputType="number"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/custom_list3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/custom_list2">
+        <TextView
+            android:id="@+id/tz"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="@string/data_text3"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/data_edittext3"
+            android:id="@+id/ez"
+            android:inputType="number"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_above="@+id/bottom_panel"
+        android:layout_below="@+id/custom_list3">
+        <TextView
+            android:id="@+id/print"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@id/bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="right">
+
+        <Button android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="@string/data_button_text"/>
+    </LinearLayout>
+
+</RelativeLayout>
